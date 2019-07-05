@@ -2,7 +2,7 @@
 
 YII2 Single Application Template 
 =================================
-Admin LTE Build in Template in Single YII2 template project
+STISLA Build in Template in Single YII2 template project
 --------------------------------------------------------------
 
 
@@ -31,16 +31,7 @@ INSTALLATION
 ---------------
 
 
-Install via Composer
---------------------
 
-If you do not have Composer, you may install it by following the instructions at getcomposer.org.
-
-You can then install this project template using the following command:
-
->php composer.phar global require "fxp/composer-asset-plugin:~1.1.0
->
->php composer.phar create-project --prefer-dist --stability=dev piantgrunger/yii2-single-app-template single
 
 CONFIGURATION
 --------------
