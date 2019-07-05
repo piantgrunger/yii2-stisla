@@ -70,7 +70,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        
+
           $model = new LoginForm();
         return $this->render('index',['model'=>$model]);
     }
@@ -82,6 +82,8 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        $this->layout = "main-login";
+
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }

@@ -1,6 +1,6 @@
 <?php
  use yii\helpers\Url;
-
+  use yii\bootstrap4\Dropdown;
 ?>
 <form class="form-inline mr-auto" action="">
   <ul class="navbar-nav mr-3">
@@ -32,21 +32,32 @@
             <div class="time text-primary">2 Min Ago</div>
           </div>
         </a>
-      
+
     </div>
   </li>
   <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
     <img alt="image" src="<?=Url::to(["img/avatar/avatar-1.png"])?>" class="rounded-circle mr-1">
-    <div class="d-sm-none d-lg-inline-block">Hi, User </div></a>
-    <div class="dropdown-menu dropdown-menu-right">
-      <div class="dropdown-title">Welcome, </div>
-      <a href="" class="dropdown-item has-icon">
-        <i class="far fa-user"></i> Profile Settings
-      </a>
-      <div class="dropdown-divider"></div>
-      <a href="" class="dropdown-item has-icon text-danger">
-        <i class="fas fa-sign-out-alt"></i> Logout
-      </a>
-    </div>
+    <div class="d-sm-none d-lg-inline-block">Hi, <?=yii::$app->user->identity->username?> </div></a>
+       <?php
+          echo Dropdown::widget([
+              'items' => [
+                  ['label' => '<i class="far fa-user"></i> Profile Settings
+      </a>', 'encode' =>false, 'url' => '#',
+      "linkOptions" =>["class" =>"dropdown-item has-icon"]
+      ],
+      [
+      'label' => '<i class="fas fa-sign-out-alt"></i> Logout
+      </a>', 'encode' => false, 'url' => ['/site/logout'],
+
+      "linkOptions" => [ "data-method" => "POST", "class" => "dropdown-item has-icon text-danger"]
+
+    ],
+              ],
+            "class" => "dropdown-menu dropdown-menu-right"
+          ]);
+
+
+      ?>
+
   </li>
 </ul>
