@@ -1,6 +1,8 @@
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
 
-YII2 Single Application Template 
+
+
+YII2 Single Application Template
 =================================
 STISLA Build in Template in Single YII2 template project
 --------------------------------------------------------------
@@ -17,7 +19,7 @@ DIRECTORY STRUCTURE
 -  migrations/         contains database migrations
 -  models/             contains model classes
 -  runtime/            contains files generated during runtime
--  template/           contains  template files for GII and AdminLTE template
+-  template/           contains  template files for GII
 -  tests/              contains various tests for the basic application
 -  vendor/             contains dependent 3rd-party packages
 -  views/              contains view files for the Web application
@@ -48,14 +50,35 @@ Create a new database and adjust the components['db'] configuration the file con
    > 'charset' => 'utf8',
 ];
 
+## Installation
+Clone the repo:
+```shell
+git clone https://github.com/rehmatworks/stisla-laravel.git
+```
+
+Install composer packages:
+```shell
+composer update
+```
+
 Apply migrations with console command
 ---------------------------------------
 
-yii migrate
+## Installation
+Clone the repo:
+```shell
+git clone https://github.com/piantgrunger/yii2-stisla.git
+```
 
+Install composer packages:
+```shell
+php yii migrate
+```
 Now you should be able to access the application through the following URL, assuming single is the directory directly under the Web root.
 
 http://localhost/single/web/
+
+
 
 
 NOTES:
@@ -66,3 +89,5 @@ Check and edit the other files in the config/ directory to customize your applic
 Refer to the README in the tests direcotry for information specific to basic application tests.
 
 
+### Demo
+URL: http://yii2-stisla.alfiannaufal.com
