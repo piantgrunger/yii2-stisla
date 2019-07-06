@@ -84,3 +84,23 @@ Refer to the README in the tests direcotry for information specific to basic app
 
 ### Demo
 URL: http://yii2-stisla.alfiannaufal.com
+
+### Credits:
+*   [YiiFramework](https://yiiframework)
+*   [Stisla Bootstrap 4 Admin Panel Template](https://github.com/stisla/stisla)
+*   [yii2-mimin Simple RBAC Manager for Yii2 (minify of yii2-admin)](https://github.com/hscstudio/yii2-mimin)
+
+
+
+### How to Contribute
+
+This template is an OpenSource project so your contribution is very welcome.
+
+In order to get started:
+
+- Install this in your local (read installation section)
+- Clone this repository.
+- Check [README.md](README.md).
+- Send [pull requests](https://github.com/piantgrunger/yii2-stisla/pulls).
+
+Aside from contributing via pull requests you may [submit issues](https://github.com/piantgrunger/yii2-stisla/issues).
