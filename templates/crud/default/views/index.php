@@ -54,7 +54,7 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
         <?php echo  " ['class' => 'yii\grid\ActionColumn',   'template' => Mimin::filterActionColumn([
               'update','delete','view'],".
                 '$this->context->route),    ],    ];'?>
-<?php  
+<?php
  echo ' echo ExportMenu::widget(['.
     '\'dataProvider\' => $dataProvider,'.
     '\'columns\' => $gridColumns';
@@ -88,7 +88,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= !empty($generator->searchModelClass) ? "'filterModel' => \$searchModel,\n        'columns' => \$gridColumns," : "'columns' => \$gridColumns, "; ?>
         'responsive'=>true,
         'hover'=>true,
-         'resizableColumns'=>true,    
+         'resizableColumns'=>true,
     ]); ?>
 <?php else: ?>
     <?= "<?= " ?>ListView::widget([

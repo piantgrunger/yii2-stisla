@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\User;
+use app\models\Route;
 
 /**
- * UserSearch represents the model behind the search form about `app\models\User`.
+ * RouteSearch represents the model behind the search form about `app\models\Route`.
  */
-class UserSearch extends User
+class RouteSearch extends Route
 {
 	/**
 	 * @inheritdoc
@@ -18,8 +18,8 @@ class UserSearch extends User
 	public function rules()
 	{
 		return [
-			[['id', 'status', 'created_at', 'updated_at'], 'integer'],
-			[['username', 'auth_key', 'password_hash', 'password_reset_token', 'email'], 'safe'],
+			[['name', 'alias', 'type'], 'safe'],
+			[['status'], 'integer'],
 		];
 	}
 
@@ -41,7 +41,7 @@ class UserSearch extends User
 	 */
 	public function search($params)
 	{
-		$query = User::find();
+		$query = Route::find();
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
@@ -56,17 +56,12 @@ class UserSearch extends User
 		}
 
 		$query->andFilterWhere([
-			'id' => $this->id,
 			'status' => $this->status,
-			'created_at' => $this->created_at,
-			'updated_at' => $this->updated_at,
 		]);
 
-		$query->andFilterWhere(['like', 'username', $this->username])
-			->andFilterWhere(['like', 'auth_key', $this->auth_key])
-			->andFilterWhere(['like', 'password_hash', $this->password_hash])
-			->andFilterWhere(['like', 'password_reset_token', $this->password_reset_token])
-			->andFilterWhere(['like', 'email', $this->email]);
+		$query->andFilterWhere(['like', 'name', $this->name])
+			->andFilterWhere(['like', 'alias', $this->alias])
+			->andFilterWhere(['like', 'type', $this->type]);
 
 		return $dataProvider;
 	}
