@@ -50,14 +50,15 @@ Database
 --------
 
 Create a new database and adjust the components['db'] configuration the file config/db.php with real data, for example:
-
->return [
-   > 'class' => 'yii\db\Connection',
-   > 'dsn' => 'mysql:host=localhost;dbname=db_coba',
-   > 'username' => 'root',
-   > 'password' => '1234',
-   > 'charset' => 'utf8',
+```php
+return [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=localhost;dbname=db_coba',
+    'username' => 'root',
+    'password' => '1234',
+    'charset' => 'utf8',
 ];
+```
 
 Apply migrations with console command
 ---------------------------------------
