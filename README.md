@@ -25,13 +25,22 @@ DIRECTORY STRUCTURE
 -  views/              contains view files for the Web application
 -  web/                contains the entry script and Web resources
 
-REQUIREMENTS
-------------
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
 
-INSTALLATION
----------------
 
+
+
+
+## Installation
+Clone the repo:
+```shell
+git clone https://github.com/rehmatworks/stisla-laravel.git
+```
+
+Install composer packages:
+```shell
+composer update
+
+```
 
 
 
@@ -50,25 +59,8 @@ Create a new database and adjust the components['db'] configuration the file con
    > 'charset' => 'utf8',
 ];
 
-## Installation
-Clone the repo:
-```shell
-git clone https://github.com/rehmatworks/stisla-laravel.git
-```
-
-Install composer packages:
-```shell
-composer update
-```
-
 Apply migrations with console command
 ---------------------------------------
-
-## Installation
-Clone the repo:
-```shell
-git clone https://github.com/piantgrunger/yii2-stisla.git
-```
 
 Install composer packages:
 ```shell
