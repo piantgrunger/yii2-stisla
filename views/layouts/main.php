@@ -27,6 +27,11 @@ AppAsset::register($this);
 
 <body>
   <?php $this->beginBody() ?>
+  <script>
+  window.FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
 
     <div id="app">
       <div class="main-wrapper">

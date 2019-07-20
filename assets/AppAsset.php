@@ -38,7 +38,7 @@ class AppAsset extends AssetBundle
         'yii\bootstrap4\BootstrapAsset',
       //  'rmrevin\yii\fontawesome\cdn\AssetBundle',
         //additional import of third party alert project
-         'app\assets\SweetAlertAsset',
+        'app\assets\SweetAlertAsset',
 
     ];
 }

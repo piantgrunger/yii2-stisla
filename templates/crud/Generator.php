@@ -49,7 +49,7 @@ class Generator extends \yii\gii\Generator
      */
     public function getName()
     {
-        return 'CRUD Generator HRMS';
+        return 'Stisla Template CRUD Generator ';
     }
 
     /**

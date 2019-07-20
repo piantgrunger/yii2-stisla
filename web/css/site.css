@@ -41,35 +41,34 @@ a.asc:after, a.desc:after {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Font Awesome\ 5 Free';
+
+    font-weight: 900;
     line-height: 1;
     padding-left: 5px;
 }
-
 a.asc:after {
-    content: /*"\e113"*/ "\e151";
+    content: "\f01b";
 }
 
 a.desc:after {
-    content: /*"\e114"*/ "\e152";
+    content: "\f01a";
 }
 
 .sort-numerical a.asc:after {
-    content: "\e153";
+    content: "\f01b";
 }
 
 .sort-numerical a.desc:after {
-    content: "\e154";
+    content: "\f01a";
 }
 
 .sort-ordinal a.asc:after {
-    content: "\e155";
+    content: "\f01b";
 }
 
 .sort-ordinal a.desc:after {
-    content: "\e156";
+    content: "\f01a";
 }
 
 .grid-view th {

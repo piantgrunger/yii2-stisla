@@ -189,13 +189,7 @@ if (YII_ENV_DEV) {
                 'my' => '@app/Templates/crud/default',
             ]
         ],
-        'mymodel' => [
-            'class' => 'app\templates\model\Generator',
-            'templates' => [
-                'my' => '@app/Templates/model/default',
-            ]
-        ]
-
+        
     ],
     ];
 }

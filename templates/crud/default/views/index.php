@@ -16,9 +16,9 @@ echo "<?php\n";
 
 use hscstudio\mimin\components\Mimin;
 use yii\helpers\Html;
-use <?= $generator->indexWidgetType === 'grid' ? "kartik\\grid\\GridView" : "yii\\widgets\\ListView" ?>;
+use <?= $generator->indexWidgetType === 'grid' ? "app\\widgets\\grid\\GridView" : "yii\\widgets\\ListView" ?>;
 <?= $generator->enablePjax ? 'use yii\widgets\Pjax;' : '' ?>
-<?=" use kartik\\export\\ExportMenu;";?>
+
 
 <?php echo'$gridColumns=[[\'class\' => \'yii\grid\SerialColumn\'], ';?>
 
@@ -51,15 +51,10 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
 }
 ?>
 
-        <?php echo  " ['class' => 'yii\grid\ActionColumn',   'template' => Mimin::filterActionColumn([
+        <?php echo  " ['class' => 'app\widgets\grid\ActionColumn',   'template' => Mimin::filterActionColumn([
               'update','delete','view'],".
                 '$this->context->route),    ],    ];'?>
-<?php
- echo ' echo ExportMenu::widget(['.
-    '\'dataProvider\' => $dataProvider,'.
-    '\'columns\' => $gridColumns';
-   echo "]);";
-?>
+
 
 
 /* @var $this yii\web\View */
@@ -86,9 +81,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= "<?= " ?>GridView::widget([
         'dataProvider' => $dataProvider,
         <?= !empty($generator->searchModelClass) ? "'filterModel' => \$searchModel,\n        'columns' => \$gridColumns," : "'columns' => \$gridColumns, "; ?>
-        'responsive'=>true,
-        'hover'=>true,
-         'resizableColumns'=>true,
+      
     ]); ?>
 <?php else: ?>
     <?= "<?= " ?>ListView::widget([
