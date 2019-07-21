@@ -10,7 +10,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 
-use app\components\Configs;
+use hscstudio\mimin\components\Configs;
 use yii\helpers\Inflector;
 use yii\helpers\VarDumper;
 use yii\caching\TagDependency;

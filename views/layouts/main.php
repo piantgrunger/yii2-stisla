@@ -70,9 +70,11 @@ AppAsset::register($this);
                     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                   ]
                 ) ?>
+
+               <?=Alert::widget()?>
             </div>
             <div class="section-body">
-              <?=Alert::widget()?>
+          
               <?= $content ?>
             </div>
           </section>

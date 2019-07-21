@@ -23,7 +23,7 @@ if(window.Chart) {
 if(window.Dropzone) {
   Dropzone.autoDiscover = false;
 }
-
+/*
 // Basic confirm box
 $('[data-confirm]').each(function() {
   var me = $(this),
@@ -52,7 +52,7 @@ $('[data-confirm]').each(function() {
     ]
   })
 });
-
+*/
 // Global
 $(function() {
   let sidebar_nicescroll_opts = {
