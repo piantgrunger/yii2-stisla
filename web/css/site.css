@@ -35,40 +35,46 @@ body {
     color: #c55;
     font-style: italic;
 }
-
+@font-face {
+    font-family: 'Glyphicons Halflings';
+  
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  }
 /* add sorting icons to gridview sort links */
 a.asc:after, a.desc:after {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Font Awesome\ 5 Free';
-
-    font-weight: 900;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
     line-height: 1;
     padding-left: 5px;
 }
+
 a.asc:after {
-    content: "\f01b";
+    content: "\e151";
 }
 
 a.desc:after {
-    content: "\f01a";
+    content: "\e152";
 }
 
 .sort-numerical a.asc:after {
-    content: "\f01b";
+    content: "\e153";
 }
 
 .sort-numerical a.desc:after {
-    content: "\f01a";
+    content: "\e154";
 }
 
 .sort-ordinal a.asc:after {
-    content: "\f01b";
+    content: "\e155";
 }
 
 .sort-ordinal a.desc:after {
-    content: "\f01a";
+    content: "\e156";
 }
 
 .grid-view th {

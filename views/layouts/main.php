@@ -71,9 +71,9 @@ AppAsset::register($this);
                   ]
                 ) ?>
 
-               <?=Alert::widget()?>
             </div>
             <div class="section-body">
+            <?=Alert::widget()?>
           
               <?= $content ?>
             </div>
