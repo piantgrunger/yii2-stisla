@@ -33,7 +33,7 @@ DIRECTORY STRUCTURE
 ## Installation
 Clone the repo:
 ```shell
-git clone https://github.com/rehmatworks/stisla-laravel.git
+git clone https://github.com/piantgrunger/yii2-stisla
 ```
 
 Install composer packages:
