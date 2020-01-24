@@ -46,7 +46,7 @@ AppAsset::register($this);
 
         <!-- Main Content -->
         <div class="main-content">
-          <section class="section">
+          <section class="section section-success">
             <div class="section-header">
               <?php if (isset($this->blocks['content-header'])) { ?>
                 <h1><?= $this->blocks['content-header'] ?></h1>
@@ -63,14 +63,15 @@ AppAsset::register($this);
                   } ?>
                 </h1>
               <?php } ?>
-
+              <div class="section-header-breadcrumb">
+            
               <?=
                 Breadcrumbs::widget(
                   [
                     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                   ]
                 ) ?>
-
+              </div>
             </div>
             <div class="section-body">
             <?=Alert::widget()?>

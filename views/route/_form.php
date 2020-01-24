@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\Bootstrap4\ActiveForm;
 use kartik\widgets\SwitchInput;
 
 /* @var $this yii\web\View */
