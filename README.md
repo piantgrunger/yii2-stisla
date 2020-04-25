@@ -38,6 +38,7 @@ git clone https://github.com/piantgrunger/yii2-stisla
 
 Install composer packages:
 ```shell
+composer global require "fxp/composer-asset-plugin:~1.1"
 composer update
 
 ```
